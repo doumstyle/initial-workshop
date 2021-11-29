@@ -5,12 +5,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/styles.css">
     <title>HTML Challenge 1</title>
 </head>
 
 <body>
     <header>
-        <h1>HTML Challenge 1</h1>
+        <h2>HTML Challenge 1</h2>
         <p>Reproduce the patterns presented below</p>
         <p>Don't forget to indent your code</p>
         <p>Use the <span class="blue-text">W3C validator</span> to ensure the quality of your code !</p>
@@ -20,21 +21,21 @@
     <hr>
 
     <article>
-        <h1>Iteration 1 - Inline vs Block elements</h1>
+        <h2>Iteration 1 - Inline vs Block elements</h2>
         <p>Write a paragraph that contains some span or em tags of <span class="orange-text">different colors</span>.
             Spans are inline elements, meaning that their <em class="red-text">default</em> display property value is
-            <em class="green-text">inline</em>. Those elements will follow the <em class="yellow-text">horizontal</em>
+            <em class="green-text">inline</em>. Those elements will follow the <em class="orange-text">horizontal</em>
             flow of the document. <em class="red-text">Inline elements</em> go next to another inline element so you <b
                 class="green-text">won't</b> have any line break until you decide to insert one (like here withe the br
             tag). <br> Images are inline elements too ! <img src="/img/moss.jpeg" alt="moss" /> That's a simple but
-            <b><em class="yellow-text">super important</em></b> point to remember ! Feel free to dig deeper with the
+            <b><em class="orange-text">super important</em></b> point to remember ! Feel free to dig deeper with the
             <span>MDN doc.</span>
         </p>
 
         <hr>
     </article>
     <article>
-        <h1>Iteration 2 - Simple list</h1>
+        <h2>Iteration 2 - Simple list</h2>
         <ol>
             <li>Open Visual Studio Code</li>
             <li>Launch a Terminal window</li>
@@ -46,7 +47,7 @@
     <hr>
     <article>
         <h1>Iteration 3 - Simple table</h1>
-        <table>
+        <table class="simple-table">
             <tr>
                 <td>Ace</td>
                 <td>Diamond</td>
@@ -59,27 +60,31 @@
     </article>
     <hr>
     <article>
-        <h1>Iteration 4 - Nested list</h1>
+        <h2>Iteration 4 - Nested list</h2>
         <ol>
             <li>level 1.1</li>
             <li>level 1.2</li>
-            <ul>
-                <li>level 2.1</li>
-                <ol>
-                    <li>level 3.1</li>
-                    <li>level 3.2</li>
-                    <li>level 3.3</li>
-                </ol>
-                <li>level 2.2</li>
-                <li>level 2.3</li>
-            </ul>
+            <li>
+                <ul>
+                    <li>level 2.1</li>
+                    <li>
+                        <ol>
+                            <li>level 3.1</li>
+                            <li>level 3.2</li>
+                            <li>level 3.3</li>
+                        </ol>
+                    </li>
+                    <li>level 2.2</li>
+                    <li>level 2.3</li>
+                </ul>
+            </li>
             <li>level 1.3</li>
         </ol>
     </article>
     <hr>
     <article>
-        <h1>Bonus 1 - A more complex table</h1>
-        <table>
+        <h2>Bonus 1 - A more complex table</h2>
+        <table class="complex-table">
             <thead>
                 <tr>
                     <th colspan="2"></th>
@@ -123,18 +128,18 @@
     </article>
     <hr>
     <article>
-        <h1>Bonus 2 - Video player</h1>
+        <h2>Bonus 2 - Video player</h2>
         <p>Display a video player with control buttons <br> Pick any file you want.</p>
         <p><b>Extra:</b> <br> Add a poster attribute to it. <br> Provide 2 files extentions (webm and mp4) for full
             cross-browser compatibility.</p>
-        <video controls width="400" poster="/img/poster.jpg">
+        <video controls width="600" poster="/img/poster.jpg">
             <source src="/assets/video.mp4" type="video/mp4">
             <source src="assets/video_webm.webm" type="video/webm">
         </video>
     </article>
     <hr>
     <article>
-        <h1>Bonus 3 - Audio player</h1>
+        <h2>Bonus 3 - Audio player</h2>
         <p>Display an audio player with control buttons <br> Pick any mp3 file you like.</p>
         <audio controls src="/assets/music.mp3"></audio>
     </article>
