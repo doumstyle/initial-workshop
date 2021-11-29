@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <title>CSS Challenge 1</title>
+</head>
+
+<body>
+    <header>
+        <h2>CSS Challenge I</h2>
+        <p>Reproduce the following patterns using HTML and CSS. <br>
+            Use allowed tags and take advantage of given clues. <br>
+            Technical constraints are an integral part of the exercise ! <br><br> Use the <span class="blue-text">W3C
+                validator</span> to ensure the
+            quality of your code !</p>
+    </header>
+    <hr>
+    <article class="clearFix">
+        <h2>Iteration 1 - Red target</h2>
+        <ul>
+            <li>A 200 * 200 px box containing a 100 * 100 px target.</li>
+            <li>Allowed tag: div</li>
+            <li><b>Use only</b>: background, border, box-sizing, height, padding, width</li>
+        </ul>
+        <div id="target-container">
+            <div id="target"></div>
+        </div>
+    </article>
+    <hr>
+    <article class="clearFix">
+        <h2>Iteration 2 - Shaped table</h2>
+        <ul>
+            <li>A 300 * 150 px table with alternate background on second row.</li>
+            <li>Allowed tags: table, tbody, tr, td</li>
+            <li>Hints: border, colspan, nth-child</li>
+        </ul>
+        <table id="shaped-table">
+            <tbody>
+                <tr>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                    <td colspan="2"></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td colspan="3"></td>
+                    <td colspan="3"></td>
+                </tr>
+            </tbody>
+        </table>
+    </article>
+    <hr>
+    <article class="clearFix">
+        <h2>Iteration 3 - Purple blocks</h2>
+        <ul>
+            <li>A 300px width element containing nested children.</li>
+            <li>Allowed tag: div</li>
+            <li>Hints: box-sizing, margin, nth-child, padding, text-align, width</li>
+        </ul>
+        <div id="container">
+            <div id="purple-blocks-container">
+                <div>
+                    <p>a</p>
+                </div>
+                <div>
+                    <p>b</p>
+                </div>
+            </div>
+            <div id="purple-blocks-container2">
+                <div>
+                    <p>c</p>
+                </div>
+                <div>
+                    <p>d</p>
+                </div>
+            </div>
+        </div>
+    </article>
+    <hr>
+    <article class="clearFix">
+        <h2>Bonus 1 - Inline-block rows</h2>
+        <ul>
+            <li>A 300px width element containing 2 rows,
+                each containing 4 children with 2px left or right borders.</li>
+            <li>Allowed tag: div</li>
+            <li>Hints: display (inline-block), width, border, <span class="blue-text">font-size :)</span></li>
+        </ul>
+        <div id="inline-blocks-rows">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+    </article>
+    <hr>
+    <article>
+        <h2>Bonus 2 - Flexbox rows</h2>
+        <ul>
+            <li>A 300px width element containing 2 rows,
+                each containing 4 children with 2px left or right borders.</li>
+            <li>Allowed tag: div</li>
+            <li>Hints: display (flex), border</li>
+        </ul>
+        <div id="flexbox-rows">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+        <div id="flexbox-rows2">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+        </div>
+
+        </div>
+    </article>
+</body>
+
+</html>
